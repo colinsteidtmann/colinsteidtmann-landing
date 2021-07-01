@@ -79,8 +79,8 @@ const Figure = (props) => {
 			<Modal id={"Modal"+id}>
 				<Modal.Header />
 				<Modal.Body>
-					<figure className="figure">
-					  <img src={img} className="figure-img img-fluid rounded" alt={caption + " image"} />
+					<figure className="figure text-center">
+					  <img src={img} loading="lazy" className="figure-img img-fluid rounded" alt={caption + " image"} />
 					  <figcaption className="figure-caption text-center">{caption}</figcaption>
 					</figure>
 				</Modal.Body>
@@ -92,8 +92,8 @@ const Figure = (props) => {
 					<i className="fas fa-xs fa-expand-arrows-alt"></i>
 				</p>
 
-				<figure className="figure">
-				  <img src={img} className="figure-img img-fluid rounded" alt={caption + " image"} />
+				<figure className="figure text-center">
+				  <img src={img} loading="lazy" className="figure-img img-fluid rounded" alt={caption + " image"} />
 				  <figcaption className="figure-caption text-center">{caption}</figcaption>
 				</figure>
 

@@ -13,6 +13,7 @@ const Carousel = (props) => {
 			    		<figure className={"figure carousel-item text-center " + (imgId === 0 && "active")}>
 			    		  <img 
 			    		  	src={figure.img}
+			    		  	loading="lazy"
 			    		  	className="figure-img img-fluid rounded" 
 			    		  	alt={figure.caption + " image"}
 			    		  />
@@ -26,6 +27,7 @@ const Carousel = (props) => {
 			    		<div key={imgId} className={"carousel-item " + (imgId === 0 && "active")}>
 			    		  <img 
 			    		  	src={img} 
+			    		  	loading="lazy"
 			    		  	className="d-block w-100" 
 			    		  	alt="carousel image" 
 			    		  />

@@ -22,6 +22,7 @@ export const HomeContent = () => {
 						src={DriveImgLink("1NWI3B-NmTosR3Aeib6rcbTqTPL3KsLUU")} 
 						className="img-fluid" 
 						alt="Picture of Colin"
+						loading="lazy"
 					/>
 
 				</div>

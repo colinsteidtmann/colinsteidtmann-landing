@@ -19,11 +19,12 @@ export const LightboxGallery = (props) => {
 				{
 					figures.map((figure,id) => (
 
-						<div className="col" key={id} >
+						<div className="col text-center" key={id} >
 
-							<figure className="figure">
+							<figure className="figure text-center">
 							  <img 
 							  	src={figure.img}
+							  	loading="lazy"
 							  	className="figure-img img-fluid rounded" 
 							  	alt={figure.caption + " image"}
 							  />
