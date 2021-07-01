@@ -9,22 +9,23 @@ const Pageination = (props) => {
 	return (
 		<React.Fragment>
 			<div className="row row-cols-1 row-cols-lg-2 my-3 gy-3">
-				<div className="col text-lg-end">
 					{
 						prevBlog &&
-						<Link to={prevBlog.link} className="text-dark mx-5 w-100" style={{"textDecoration":"none"}}>
-							<strong>Previous:</strong> {prevBlog.title}
-						</Link>
+						<div className="col text-lg-end">
+							<Link to={prevBlog.link} className="text-dark mx-5 w-100" style={{"textDecoration":"none"}}>
+								<strong>Previous:</strong> {prevBlog.title}
+							</Link>
+						</div>
 					}
-				</div>
-				<div className="col text-lg-start">
+				
 					{
 						nextBlog &&
-						<Link to={nextBlog.link} className="text-dark mx-5 w-100" style={{"textDecoration":"none"}}>
-							<strong>Next:</strong> {nextBlog.title} 
-						</Link>
+						<div className="col text-lg-start">
+							<Link to={nextBlog.link} className="text-dark mx-5 w-100" style={{"textDecoration":"none"}}>
+								<strong>Next:</strong> {nextBlog.title} 
+							</Link>
+						</div>
 					}
-				</div>
 			</div>
 		</React.Fragment>
 	);
