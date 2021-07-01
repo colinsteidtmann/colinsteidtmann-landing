@@ -3,10 +3,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
    <url>
-
       <loc>http://www.colinsteidtmann.com/</loc>
-
    </url>
+
+   <url>
+      <loc>http://www.colinsteidtmann.com/contact</loc>
+   </url>
+
+   <url>
+      <loc>http://www.colinsteidtmann.com/writing/bikeTrip/inspiration</loc>
+   </url>
+
+   <url>
+      <loc>http://www.colinsteidtmann.com/writing/bikeTrip/preparations</loc>
+   </url>
+
+   <url>
+      <loc>http://www.colinsteidtmann.com/writing/bikeTrip/day1</loc>
+   </url>
+
+   <url>
+      <loc>http://www.colinsteidtmann.com/writing/bikeTrip/day2</loc>
+   </url>
+
+   <url>
+      <loc>http://www.colinsteidtmann.com/writing/bikeTrip/day3</loc>
+   </url>
+
+   <url>
+      <loc>http://www.colinsteidtmann.com/writing/bikeTrip/day4</loc>
+   </url>
+
+   <url>
+      <loc>http://www.colinsteidtmann.com/writing/bikeTrip/day5</loc>
+   </url>
+
+   <url>
+      <loc>http://www.colinsteidtmann.com/writing/bikeTrip/day6</loc>
+   </url>
+
+   <url>
+      <loc>http://www.colinsteidtmann.com/writing/bikeTrip/day7</loc>
+   </url>
+
+   <url>
+      <loc>http://www.colinsteidtmann.com/writing/bikeTrip/day8</loc>
+   </url>
+
 
 
 </urlset> 

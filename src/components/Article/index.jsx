@@ -8,9 +8,9 @@ export const Article = (props) => {
 	const {children} = props;
 	return (
 		<React.Fragment>
-			<div class="row p-4">
+			<div className="row p-4">
 				<BackButton/>
-				<div class="col-12 col-lg-6 mx-auto text-start mt-4 mt-lg-0">
+				<div className="col-12 col-lg-6 mx-auto text-start mt-4 mt-lg-0">
 					{children}
 				</div>
 			</div>
@@ -22,14 +22,14 @@ const Header = (props) => {
 	const {title, subtitle, date} = props;
 	return (
 		<React.Fragment>
-			<div class="row">
-				<h1 class="fw-strong">
+			<div className="row">
+				<h1 className="fw-strong">
 					{title}
 				</h1>
-				<h3 class="fw-normal text-secondary">
+				<h3 className="fw-normal text-secondary">
 					<em>{subtitle}</em>
 				</h3>
-				<h5 class="fw-light mt-2">
+				<h5 className="fw-light mt-2">
 					{date}
 				</h5>
 			</div>
@@ -41,7 +41,7 @@ const Body = (props) => {
 	const {children} = props;
 	return (
 		<React.Fragment>
-			<div class="row mt-4">
+			<div className="row mt-4">
 				{children}
 			</div>
 		</React.Fragment>
@@ -52,7 +52,7 @@ const Subheader = (props) => {
 	const {children} = props;
 	return (
 		<React.Fragment>
-			<h5 class="text-muted">
+			<h5 className="text-muted">
 				{children}
 			</h5>
 		</React.Fragment>
@@ -63,7 +63,7 @@ const Bodytext = (props) => {
 	const {children} = props;
 	return (
 		<React.Fragment>
-			<p class="fw-light">
+			<p className="fw-light">
 				{children}
 			</p>
 		</React.Fragment>
@@ -73,29 +73,28 @@ const Bodytext = (props) => {
 const Figure = (props) => {
 	const {img, caption} = props;
 	const id = Math.abs(getHash(caption + img));
-	console.log("id", id)
 	return (
 		<React.Fragment>
 
 			<Modal id={"Modal"+id}>
 				<Modal.Header />
 				<Modal.Body>
-					<figure class="figure">
-					  <img src={img} class="figure-img img-fluid rounded" alt={caption + " image"} />
-					  <figcaption class="figure-caption text-center">{caption}</figcaption>
+					<figure className="figure">
+					  <img src={img} className="figure-img img-fluid rounded" alt={caption + " image"} />
+					  <figcaption className="figure-caption text-center">{caption}</figcaption>
 					</figure>
 				</Modal.Body>
 			</Modal>
 
-			<div class="row" data-bs-toggle="modal" data-bs-target={"#Modal"+id} style={{"cursor":"pointer"}}>
+			<div className="row" data-bs-toggle="modal" data-bs-target={"#Modal"+id} style={{"cursor":"pointer"}}>
 
-				<p class="text-end w-100">
-					<i class="fas fa-xs fa-expand-arrows-alt"></i>
+				<p className="text-end w-100">
+					<i className="fas fa-xs fa-expand-arrows-alt"></i>
 				</p>
 
-				<figure class="figure">
-				  <img src={img} class="figure-img img-fluid rounded" alt={caption + " image"} />
-				  <figcaption class="figure-caption text-center">{caption}</figcaption>
+				<figure className="figure">
+				  <img src={img} className="figure-img img-fluid rounded" alt={caption + " image"} />
+				  <figcaption className="figure-caption text-center">{caption}</figcaption>
 				</figure>
 
 
@@ -126,33 +125,33 @@ const StravaSection = (props) => {
 
 	return (
 		<React.Fragment>
-			<div class="row">
+			<div className="row">
 
-				<p class="fw-light">
+				<p className="fw-light">
 					<strong>
 						Distance: {distance} miles
 					</strong>
 				</p>
 
-				<p class="fw-light">
+				<p className="fw-light">
 					<strong>
 						Elevation gain: {elevation} ft
 					</strong>
 				</p>
 
-				<p class="fw-light">
+				<p className="fw-light">
 					<strong>
 						Moving time: {movingTime}
 					</strong>
 				</p>
 
-				<p class="fw-light">
+				<p className="fw-light">
 					<strong>
 						Facebook: <ALink href={facebook} text={`Day ${dayNumber} Facebook blog in the moment`} />
 					</strong>
 				</p>
 
-				<p class="fw-light">
+				<p className="fw-light">
 					<strong>
 						Strava: <ALink href={strava} text={`Day ${dayNumber} Strava Ride`} />
 					</strong>

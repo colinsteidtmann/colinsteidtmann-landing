@@ -42,5 +42,5 @@ export const FontIcons = {
   twitterSquare: <i className="fab fa-twitter-square"></i>,
   discord: <i className="fab fa-discord "></i>,
   envelope: <i className="fas fa-envelope"></i>,
-  apartment: <i class="far fa-building "></i>,
+  apartment: <i className="far fa-building "></i>,
 };

@@ -6,8 +6,8 @@ export const Contact = () => {
     return ( 
     	<React.Fragment>
         	
-                <div class="row my-5">
-                    <div class="col-12 col-sm-8 mx-auto">
+                <div className="row my-5">
+                    <div className="col-12 col-sm-8 mx-auto">
 
                         <div className="ratio ratio-21x9 d-block" style={{"minHeight":"100vh"}}>
                             <iframe 
@@ -18,11 +18,11 @@ export const Contact = () => {
                             </iframe>
                         </div>
 
-                        <p class="fw-light my-3">
+                        <p className="fw-light my-3">
                             I'll get back within 24 hours.
                         </p>
 
-                        <p class="fw-light my-3">
+                        <p className="fw-light my-3">
                             <a href="https://forms.gle/zQtLSSFWdqByrtuNA" target="_blank" rel="noreferrer" className="text-dark">
                                 Open form in new tab {FontIcons.externalLink}
                             </a>

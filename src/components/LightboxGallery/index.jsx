@@ -10,24 +10,24 @@ export const LightboxGallery = (props) => {
 
 			<LightboxModal figures={figures} id={id} />
 
-			<div class="row row-cols-2" data-bs-toggle="modal" data-bs-target={"#"+id+"Modal"} style={{"cursor":"pointer"}}>
+			<div className="row row-cols-2" data-bs-toggle="modal" data-bs-target={"#"+id+"Modal"} style={{"cursor":"pointer"}}>
 
-				<p class="text-end w-100">
-					<i class="fas fa-xs fa-expand-arrows-alt"></i>
+				<p className="text-end w-100">
+					<i className="fas fa-xs fa-expand-arrows-alt"></i>
 				</p>
 
 				{
 					figures.map((figure,id) => (
 
-						<div class="col" key={id} >
+						<div className="col" key={id} >
 
-							<figure class="figure">
+							<figure className="figure">
 							  <img 
 							  	src={figure.img}
-							  	class="figure-img img-fluid rounded" 
+							  	className="figure-img img-fluid rounded" 
 							  	alt={figure.caption + " image"}
 							  />
-							  <figcaption class="figure-caption text-center">
+							  <figcaption className="figure-caption text-center">
 							  	{figure.caption}
 							  </figcaption>
 							</figure>

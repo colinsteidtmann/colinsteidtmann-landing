@@ -10,15 +10,15 @@ export const BusinessesAccordian = () => {
 			<Accordian id="BusinessesAcc" flush={true}>
 				<Accordian.Item id="PolyCycles">
 					<Accordian.Header>
-						<p class="fw-light">
+						<p className="fw-light">
 							PolyCycles
 						</p>
 					</Accordian.Header>
 					<Accordian.Body>
-						<p class="fw-light">
+						<p className="fw-light">
 							<a 
 								href="https://polycycles.com/"
-								class="text-dark"
+								className="text-dark"
 								target="_blank" 
 								rel="noreferrer"
 							>
@@ -29,15 +29,15 @@ export const BusinessesAccordian = () => {
 				</Accordian.Item>
 				<Accordian.Item id="Dapplu">
 					<Accordian.Header>
-						<p class="fw-light">
+						<p className="fw-light">
 							Dapplu
 						</p>
 					</Accordian.Header>
 					<Accordian.Body>
-						<p class="fw-light">
+						<p className="fw-light">
 							<a 
 								href="https://dapplu.com/"
-								class="text-dark"
+								className="text-dark"
 								target="_blank" 
 								rel="noreferrer"
 							>
